@@ -1,9 +1,7 @@
-package Lession1;
+package Lesson1;
 
-import sun.security.mscapi.CPublicKey;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -12,24 +10,24 @@ public class Exercise {
 
     public static void main(String[] args) {
         // 1.
-        CountEvenOddNumber();
+        countEvenOddNumber();
 
         // 2.
-        FindMin();
+        findMin();
 
         //3.
-        AverageInArray();
+        averageInArray();
 
         //4.
-        SortArrayAscending();
+        sortArrayAscending();
 
         //5.
-        Factorial();
+        factorial();
     }
 // =============================================================================
     // 1. Count how many even and odd number in integer array
 
-    public static void CountEvenOddNumber() {
+    public static void countEvenOddNumber() {
         int countOdd = 0;
         int countEven = 0;
 
@@ -51,7 +49,7 @@ public class Exercise {
 // =============================================================================
     // 2. Find min
 
-    public static void FindMin() {
+    public static void findMin() {
         int min = 0;
 
         //find min
@@ -67,7 +65,7 @@ public class Exercise {
 
     // =============================================================================
 //         3. Average value
-    public static void AverageInArray() {
+    public static void averageInArray() {
         double sum = 0;
 
         for (int number : array) {
@@ -81,7 +79,7 @@ public class Exercise {
 
 // =============================================================================
 
-    public static void SortArrayAscending() {
+    public static void sortArrayAscending() {
         ArrayList<Integer> newArray = new ArrayList<>();
         for (
                 int num : array) {
@@ -97,7 +95,7 @@ public class Exercise {
 // =============================================================================
 // 5. 3! = 1*2*3
 
-    public static void Factorial() {
+    public static void factorial() {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 1; i > 0; i++) {
@@ -115,7 +113,6 @@ public class Exercise {
             }
         }
     }
-
 
 
 }

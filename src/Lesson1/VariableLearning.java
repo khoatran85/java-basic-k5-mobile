@@ -1,4 +1,4 @@
-package Lession1;
+package Lesson1;
 
 public class VariableLearning {
     public static void main(String[] args) {
@@ -44,6 +44,9 @@ public class VariableLearning {
         * <=
         * !=
         */
+
+
+    //    Short.MAX_VALUE
     }
 
 }
