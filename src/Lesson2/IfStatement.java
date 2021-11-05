@@ -1,5 +1,7 @@
 package Lesson2;
 
+import java.util.Scanner;
+
 public class IfStatement {
     static boolean isHeOntime;  // defalt value = false
 
@@ -9,11 +11,16 @@ public class IfStatement {
         System.out.println("3. Chay toi quan\n");
 
 
-        if (isHeOntime) {
-            System.out.println("Let's talk");
-        } else {
-            writeALetter("See you later");
-        }
+//        if (isHeOntime) {
+//            System.out.println("Let's talk");
+//        } else {
+//            writeALetter("See you later");
+//        }
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input arrived time:");
+        int arriveTime = scanner.nextInt();
+        isHeOntime = arriveTime <= 7 ? returnTrue() : returnFalse();
 
     }
 
@@ -21,5 +28,12 @@ public class IfStatement {
         System.out.println(msg);
     }
 
+    private static boolean returnTrue() {
+        return true;
+    }
+
+    private static boolean returnFalse() {
+        return false;
+    }
 
 }
