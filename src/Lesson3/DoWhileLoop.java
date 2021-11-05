@@ -30,7 +30,7 @@ public class DoWhileLoop {
             guessTime++;
             System.out.println("Incorrect!!!");
         } while (guessTime < MAX_GUESS_TIME);
-        System.out.println("See you next time!");
+//        System.out.println("See you next time!");
     }
 
 
