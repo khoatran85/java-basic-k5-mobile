@@ -12,7 +12,7 @@ public class Exercise {
         inputPasswords("password123");
 
         System.out.println("=========EXERCISE 3============");
-        System.out.println("Digit = " + getDigitFromString("100 minutes"));
+        getDigitFromString("100 minutes");
 
         System.out.println("=========EXERCISE 4============");
         getURLInfo("https://www.google.com");
@@ -46,7 +46,7 @@ public class Exercise {
         }
     }
 
-    private static int getDigitFromString(String text) {
+    private static void getDigitFromString(String text) {
         String digits = "";
         char[] myCharacters = text.toCharArray();
         for (char myCharacter : myCharacters) {
@@ -54,7 +54,12 @@ public class Exercise {
                 digits = digits + Character.toString(myCharacter);
             }
         }
-        return Integer.parseInt(digits);
+        if (digits.isEmpty()) {
+            System.out.println("No number found");
+        }else {
+            System.out.println(digits);
+        }
+
     }
 
 
