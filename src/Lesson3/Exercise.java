@@ -6,17 +6,16 @@ import java.util.Scanner;
 public class Exercise {
     public static void main(String[] args) {
         System.out.println("=========EXERCISE 1============");
-//        System.out.println("Total minutes = " + calculateTotalMinutes("2hrs and 5 minutes"));
+        System.out.println("Total minutes = " + calculateTotalMinutes("2hrs and 5 minutes"));
 
         System.out.println("=========EXERCISE 2============");
-//        inputPasswords("password123");
+        inputPasswords("password123");
 
         System.out.println("=========EXERCISE 3============");
-//        System.out.println("Digit = " + getDigitFromString("100 minutes"));
+        System.out.println("Digit = " + getDigitFromString("100 minutes"));
 
         System.out.println("=========EXERCISE 4============");
-        Get("https://google.com");
-
+        getURLInfo("https://www.google.com");
     }
 
 
@@ -59,15 +58,14 @@ public class Exercise {
     }
 
 
-private static void Get(String url){
-        String []urlArray = url.split("://|\\.");
-    for (String s : urlArray) {
-        System.out.println(s);
+    private static void getURLInfo(String url) {
+        String[] urlArray = url.toLowerCase().replace("www.", "").split("://|\\.");
+        System.out.println("PROTOCOL = " + urlArray[0]);
+        System.out.println("DOMAIN NAME = " + urlArray[1]);
+        System.out.println("TOP-LEVEL DOMAIN = " + urlArray[2]);
     }
-
 }
 
-}
 /*
  * Exercise 1:
  * Give input string: "2hrs and 5 minutes"
