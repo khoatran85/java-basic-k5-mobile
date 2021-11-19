@@ -4,7 +4,7 @@ public class Dog extends Animal {
     String name = "Dog";
     static int dogMaxSpeed = 60;
 
-    int dogSpeed() {
+     protected int dogSpeed() {
         return randomSpeed(dogMaxSpeed);
     }
 

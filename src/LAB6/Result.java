@@ -1,6 +1,8 @@
 package LAB6;
 
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import java.util.*;
 
 public class Result {
@@ -15,6 +17,7 @@ public class Result {
         dog.setName(dog.name);
         horse.setName(horse.name);
         tiger.setName(tiger.name);
+
 
         //get random speed
         int dogSpeed = dog.dogSpeed();
@@ -41,5 +44,17 @@ public class Result {
             }
         }
         System.out.println("Winner is " + winnerName + " with speed = " + winnerSpeed);
+
+        switch (winnerName) {
+            case "Dog":
+                System.out.println(dog.getClassName());
+                break;
+            case "Horse":
+                System.out.println(horse.getClassName());
+                break;
+            case "Tiger":
+                System.out.println(tiger.getClassName());
+                break;
+        }
     }
 }

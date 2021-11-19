@@ -3,6 +3,9 @@ package LAB6;
 import java.security.SecureRandom;
 
 public class Animal {
+    String name;
+    int maxSpeed;
+
     public String getName() {
         return name;
     }
@@ -19,15 +22,16 @@ public class Animal {
         this.maxSpeed = maxSpeed;
     }
 
-    String name;
-    int maxSpeed;
-
     public Animal() {
     }
 
 
-    protected int randomSpeed(int maxSpeed){
+    protected int randomSpeed(int maxSpeed) {
         return new SecureRandom().nextInt(maxSpeed);
+    }
+
+    public String getClassName() {
+        return ("className: " + getClass().getSimpleName());
     }
 
 }
