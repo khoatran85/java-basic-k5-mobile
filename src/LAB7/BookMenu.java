@@ -68,9 +68,27 @@ public class BookMenu {
     }
 
     private static void retrieveBook() {
-        System.out.println("===================Book Info=====================");
-        System.out.println("ISBN: " + isbn + " || Title: " + title + " || Author: " + author + " || Year: " + year + "\n");
+        int inputISBNTime = 0;
+        int maxInput = 3;
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Input ISBN: ");
+            String isbnCode = scanner.nextLine();
+            if (isbnCode.contains(isbn)) {
+                System.out.println("===================Book Info=====================");
+                System.out.println("ISBN: " + isbn + " || Title: " + title + " || Author: " + author + " || Year: " + year + "\n");
+                break;
+            } else {
+                System.out.println("===================Book Info=====================");
+                System.out.println("NOT FOUND !!!!");
+                inputISBNTime++;
+                if (inputISBNTime == maxInput) {
+                    System.out.println("Try again later!!");
+                    break;
 
+                }
+            }
+        }
     }
 
 }
