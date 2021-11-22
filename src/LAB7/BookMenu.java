@@ -1,5 +1,8 @@
 package LAB7;
 
+import sun.font.DelegatingShape;
+
+import java.time.Year;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -63,9 +66,50 @@ public class BookMenu {
         author = scanner.nextLine();
 
         //Year
+
         System.out.println("Input Year: ");
-        year = scanner.nextInt();
-    }
+//        while (true) {
+//            if (!scanner.hasNextInt()) {
+//                System.out.println("Please input number");
+//                scanner.next();
+//                inputYearTime++;
+//                if (inputYearTime == maxYearInput) {
+//                    year = 0;
+//                    System.out.println("Try Again Later");
+//                    break;
+//                }
+//            } else {
+//                year = scanner.nextInt();
+//                break;
+//            }
+//        }
+
+
+        while (true) {
+            if (!scanner.hasNextInt()) {
+                System.out.println("Please input number");
+                scanner.next();
+                inputYearTime++;
+                if (inputYearTime == maxYearInput) {
+                    year = 0;
+                    System.out.println("Try Again Later");
+                    break;
+                }
+            } else {
+                do {
+                    year = scanner.nextInt();
+                    if (year < 1000 || year > 9999)
+                        System.out.println("invalid number");
+                    scanner.next();
+                }
+                while (year >1000 && year <9999);
+                    System.out.println("gooodddddd");
+
+            }
+
+            }
+        }
+
 
     private static void retrieveBook() {
         int inputISBNTime = 0;
@@ -85,7 +129,6 @@ public class BookMenu {
                 if (inputISBNTime == maxInput) {
                     System.out.println("Try again later!!");
                     break;
-
                 }
             }
         }

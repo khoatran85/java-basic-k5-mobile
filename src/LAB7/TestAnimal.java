@@ -31,8 +31,6 @@ public class TestAnimal {
         Animal falcon = animal.animalName(falconName).animalMaxSpeed(falconMaxSpeed).isWithWings(true).build();
         Animal bee = animal.animalName(beeName).animalMaxSpeed(beeMaxSpeed).isWithWings(true).build();
 
-
-
         //get random speed
         int dogSpeed = dog.runSpeed(dogMaxSpeed);
         int horseSpeed = horse.runSpeed(horseMaxSpeed);
@@ -93,8 +91,6 @@ public class TestAnimal {
             }
         }
         System.out.println("Winner is " + winnerName + " with speed = " + winnerSpeed);
-
-
     }
 }
 

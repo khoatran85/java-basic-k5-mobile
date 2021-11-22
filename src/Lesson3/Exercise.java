@@ -51,7 +51,7 @@ public class Exercise {
         char[] myCharacters = text.toCharArray();
         for (char myCharacter : myCharacters) {
             if (Character.isDigit(myCharacter)) {
-                digits = digits + Character.toString(myCharacter);
+                digits = digits + myCharacter;
             }
         }
         if (digits.isEmpty()) {

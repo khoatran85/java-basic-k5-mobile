@@ -8,7 +8,7 @@ public class TestRobotDog {
         SolarRobotDog solarRobotDog = new SolarRobotDog();
         System.out.println("ID = " + robotDog1.getDofId());
 //        System.out.println("ID = " + solarRobotDog.getDofId());
-        System.out.println(robotDog1.getDefaultName());
+        System.out.println(RobotDog.getDefaultName());
 //        System.out.println(robotDog2.getDefaultName());
     }
 

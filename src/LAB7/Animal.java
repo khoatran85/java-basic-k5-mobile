@@ -8,10 +8,6 @@ public class Animal {
     private boolean withWings;
     private int runSpeed;
 
-    public int getMaxSpeed() {
-        return maxSpeed;
-    }
-
     public String getName() {
         return name;
     }
@@ -20,14 +16,12 @@ public class Animal {
         return withWings;
     }
 
-    public void setRunSpeed(int runSpeed){
+    public void setRunSpeed(int runSpeed) {
         this.runSpeed = runSpeed;
     }
-    public int getRunSpeed(){
-       return runSpeed;
-    }
 
-    private Animal() {
+    public int getRunSpeed() {
+        return runSpeed;
     }
 
     private Animal(Builder builder) {
