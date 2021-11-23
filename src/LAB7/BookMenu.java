@@ -83,45 +83,6 @@ public class BookMenu {
                 break;
             }
         }
-//        int count = 0;
-//        int max = 3;
-//
-//        while (true) {
-//            if (!scanner.hasNextInt()) {
-//                System.out.println("Please input number");
-//                scanner.next();
-//                inputYearTime++;
-//                if (inputYearTime == maxYearInput) {
-//                    year = 0;
-//                    System.out.println("Try Again Later");
-//                    break;
-//                }
-//            } else {
-//                do {
-//                    year = scanner.nextInt();
-//                    if (year < 1000 || year > 9999)
-//                        System.out.println("invalid number");
-//                    scanner.next();
-//                }
-//                while (year >1000 && year <9999);
-//                    System.out.println("gooodddddd");
-//                    break;
-//            }
-//                do {
-//                    year = scanner.nextInt();
-//                    if (year < 1000 || year > 9999) {
-//                        scanner.next();
-//                        System.out.println("invalid number");
-//                        count++;
-//                        System.out.println(count);
-//                    } else {
-//                        year = scanner.nextInt();
-//                        System.out.println("gooddddd");
-//                        break;
-//                    }
-//                } while (count == max);
-//            }
-//        }
 
     }
     private static void retrieveBook() {
