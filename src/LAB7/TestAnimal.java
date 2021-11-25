@@ -56,27 +56,26 @@ public class TestAnimal {
         animalList.add(falcon);
         animalList.add(bee);
 
-        Map<String, Integer> animalWithWings = new HashMap<>();
-        Map<String, Integer> animalWithoutWings = new HashMap<>();
-        Map<String, Integer> allAnimal = new HashMap<>();
+        Map<String, Integer> animalsWithWings = new HashMap<>();
+        Map<String, Integer> animalsWithoutWings = new HashMap<>();
+        Map<String, Integer> allAnimals = new HashMap<>();
 
         for (Animal a : animalList) {
-            allAnimal.put(a.getName(), a.getRunSpeed());
+            allAnimals.put(a.getName(), a.getRunSpeed());
             if (a.isWithWings() == true)
-                animalWithWings.put(a.getName(), a.getRunSpeed());
+                animalsWithWings.put(a.getName(), a.getRunSpeed());
             else
-                animalWithoutWings.put(a.getName(), a.getRunSpeed());
-
+                animalsWithoutWings.put(a.getName(), a.getRunSpeed());
         }
 
-        System.out.println("===========Result For All Animals=============");
-        allAnimalResult(allAnimal);
+        System.out.println("===========All Animals Result=============");
+        allAnimalResult(allAnimals);
 
-        System.out.println("===========Result For Animal With Wings=============");
-        allAnimalResult(animalWithWings);
+        System.out.println("===========Animals With Wings Result=============");
+        allAnimalResult(animalsWithWings);
 
-        System.out.println("===========Result For Animal Without Wings=============");
-        allAnimalResult(animalWithoutWings);
+        System.out.println("===========Animals Without Wings Result=============");
+        allAnimalResult(animalsWithoutWings);
 
     }
 
