@@ -68,6 +68,23 @@ public class BookMenu {
         //Year
 
         System.out.println("Input Year: ");
+//        while (true) {
+//            if (!scanner.hasNextInt()) {
+//                System.out.println("Please input number");
+//                scanner.next();
+//                inputYearTime++;
+//                if (inputYearTime == maxYearInput) {
+//                    year = 0;
+//                    System.out.println("Try Again Later");
+//                    break;
+//                }
+//            } else {
+//                year = scanner.nextInt();
+//                break;
+//            }
+//        }
+
+
         while (true) {
             if (!scanner.hasNextInt()) {
                 System.out.println("Please input number");
@@ -79,12 +96,21 @@ public class BookMenu {
                     break;
                 }
             } else {
-                year = scanner.nextInt();
-                break;
+                do {
+                    year = scanner.nextInt();
+                    if (year < 1000 || year > 9999)
+                        System.out.println("invalid number");
+                    scanner.next();
+                }
+                while (year >1000 && year <9999);
+                    System.out.println("gooodddddd");
+
+            }
+
             }
         }
 
-    }
+
     private static void retrieveBook() {
         int inputISBNTime = 0;
         int maxInput = 3;
