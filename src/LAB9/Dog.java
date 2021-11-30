@@ -28,11 +28,4 @@ public class Dog extends Animal {
     public boolean isFlyable() {
         return isFlyable;
     }
-//
-//    @Override
-//    public int getRandomSpeed() {
-//        randomSpeed =  new SecureRandom().nextInt(maxSpeed);
-//        System.out.println("Dog class 1 = " +randomSpeed);
-//        return randomSpeed;
-//    }
 }
