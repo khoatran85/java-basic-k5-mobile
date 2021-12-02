@@ -7,6 +7,10 @@ public class Book {
     private int year;
 
     public Book(String ISBN, String title, String authorName, int year) {
+        this.ISBN = ISBN;
+        this.title = title;
+        this.authorName = authorName;
+        this.year = year;
     }
 
     public String getISBN() {

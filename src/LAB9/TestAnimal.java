@@ -74,7 +74,7 @@ public class TestAnimal {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            System.out.println("==========ROUND " + (i+1) + "===========");
+            System.out.println("==========ROUND " + (i + 1) + "===========");
             findWinner();
         }
     }
