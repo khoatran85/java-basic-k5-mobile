@@ -80,52 +80,10 @@ public class BookFactory {
             }
         }
 
-//        Scanner scanner = new Scanner(System.in);
-//
-//        System.out.println("Input ISBN:");
-//        ISBN = scanner.nextLine();
-//
-//        System.out.println("Input Title:");
-//        title = scanner.nextLine();
-//
-//        System.out.println("input Author Name:");
-//        authorName = scanner.nextLine();
-//
-//        System.out.println("Input year:");
-//        year = scanner.nextInt();
-//        try {
-//            year = scanner.nextInt();
-//        }catch (Exception e){
-//
-//        }
-//
-//        bookList.add(new Book(ISBN, title, authorName, year));
-//        writeBookList(bookList, filePath);
-//        System.out.println("Book Saved Successfully!!");
     }
 
 
     static void searchBook() {
-//        int inputISBNTime = 0;
-//        int maxInput = 3;
-//        while (true) {
-//            Scanner scanner = new Scanner(System.in);
-//            System.out.println("Input ISBN: ");
-//            String isbnCode = scanner.nextLine();
-//            if (isbnCode.contains(isbn)) {
-//                System.out.println("===================Book Info=====================");
-//                System.out.println("ISBN: " + isbn + " || Title: " + title + " || Author: " + author + " || Year: " + year + "\n");
-//                break;
-//            } else {
-//                System.out.println("===================Book Info=====================");
-//                System.out.println("NOT FOUND !!!!");
-//                inputISBNTime++;
-//                if (inputISBNTime == maxInput) {
-//                    System.out.println("Try again later!!");
-//                    break;
-//                }
-//            }
-//        }
         System.out.println("This function hasn't implemented yet!!");
     }
 }
