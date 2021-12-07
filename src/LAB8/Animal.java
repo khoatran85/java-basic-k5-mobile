@@ -3,22 +3,25 @@ package LAB8;
 import java.security.SecureRandom;
 
 public abstract class Animal {
-
     protected String name;
-    private int speed;
+    protected int maxSpeed;
+    int speed;
 
-    public abstract void setName(String name);
-
-    public String getName() {
-        return name;
+    public Animal() {
     }
 
-    public abstract int getRandomSpeed(int maxSpeed);
-
-    public int getSpeed() {
-        return speed;
+    public Animal(String name, int maxSpeed) {
+        this.name = name;
+        this.maxSpeed = maxSpeed;
     }
 
 
+    protected String getName(){return name;}
+
+    protected int getRandomSpeed(int maxSpeed){
+        return new SecureRandom().nextInt(maxSpeed);
+    }
+
+    protected abstract int getSpeed();
 
 }

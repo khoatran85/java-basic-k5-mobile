@@ -3,17 +3,15 @@ package LAB8;
 import java.security.SecureRandom;
 
 public class Dog extends Animal {
-    String dogName;
-    int dogSpeed;
+    int speed = getRandomSpeed(maxSpeed);
 
-    @Override
-    public void setName(String name) {
-        dogName = "Dog";
+    public Dog(String name, int maxSpeed) {
+        super(name, maxSpeed);
     }
 
     @Override
-    public int getRandomSpeed(int maxSpeed) {
-    return new SecureRandom().nextInt(maxSpeed);
+    protected int getSpeed() {
+        return this.speed;
     }
 
 }

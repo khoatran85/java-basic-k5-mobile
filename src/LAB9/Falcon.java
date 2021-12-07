@@ -1,12 +1,10 @@
 package LAB9;
 
-import java.security.SecureRandom;
-
 public class Falcon extends Animal{
     private String name = "Falcon";
     private boolean isFlyable = true;
     private int maxSpeed = 90;
-    int randomSpeed = getRandomSpeed(maxSpeed);
+    int randomSpeed = getSpeed(maxSpeed);
 
     @Override
     public void setName(String name) {
@@ -24,7 +22,7 @@ public class Falcon extends Animal{
     }
 
     @Override
-    int getRandomSpeed() {
+    int getSpeed() {
         return randomSpeed;
     }
 

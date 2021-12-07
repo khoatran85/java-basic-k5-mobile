@@ -1,7 +1,5 @@
 package LAB9;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,10 +28,10 @@ public class TestAnimal {
         allAnimals.add(falcon);
         allAnimals.add(eagle);
 
-        System.out.println(dog.getName() + ":" + dog.getRandomSpeed());
-        System.out.println(tiger.getName() + ":" + tiger.getRandomSpeed());
-        System.out.println(falcon.getName() + ":" + falcon.getRandomSpeed());
-        System.out.println(eagle.getName() + ":" + eagle.getRandomSpeed());
+        System.out.println(dog.getName() + ":" + dog.getSpeed());
+        System.out.println(tiger.getName() + ":" + tiger.getSpeed());
+        System.out.println(falcon.getName() + ":" + falcon.getSpeed());
+        System.out.println(eagle.getName() + ":" + eagle.getSpeed());
 
         List<Animal> animalsWithWings = new ArrayList<Animal>();
 
@@ -47,14 +45,14 @@ public class TestAnimal {
         String winnerName = "";
 
         for (int i = 0; i < animalsWithWings.size() - 1; i++) {
-            winnerSpeed = animalsWithWings.get(i).getRandomSpeed();
-            if (animalsWithWings.get(i + 1).getRandomSpeed() > winnerSpeed) {
-                winnerSpeed = animalsWithWings.get(i + 1).getRandomSpeed();
+            winnerSpeed = animalsWithWings.get(i).getSpeed();
+            if (animalsWithWings.get(i + 1).getSpeed() > winnerSpeed) {
+                winnerSpeed = animalsWithWings.get(i + 1).getSpeed();
                 System.out.println(winnerSpeed);
                 winnerName = animalsWithWings.get(i + 1).getName();
                 System.out.println(winnerName);
             } else {
-                winnerSpeed = animalsWithWings.get(i).getRandomSpeed();
+                winnerSpeed = animalsWithWings.get(i).getSpeed();
                 winnerName = animalsWithWings.get(i).getName();
             }
         }

@@ -4,7 +4,7 @@ public class Eagle extends Animal{
     private String name = "Eagle";
     private boolean isFlyable = true;
     private int maxSpeed = 100;
-    int randomSpeed = getRandomSpeed(maxSpeed);
+    int randomSpeed = getSpeed(maxSpeed);
 
     @Override
     public void setName(String name) {
@@ -22,7 +22,7 @@ public class Eagle extends Animal{
     }
 
     @Override
-    int getRandomSpeed() {
+    int getSpeed() {
         return randomSpeed;
     }
 
